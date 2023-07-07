@@ -1,0 +1,51 @@
+/* Banner ------------------------------------------------*/
+
+.banner {
+    display:flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 111px;
+    padding : 16px;
+    margin-bottom: 22px;
+    border-radius: 10px;
+    color: white;
+    font-weight: 500;
+}
+
+.banner_v1{
+    height: 223px;
+}
+
+.banner_title{
+    font-size : 24px;
+    font-weight : 500;
+}
+
+.banner_text_1,.banner_text_2{
+    font-weight: inherit;
+}
+
+.banner_text_2::before{
+    content: "\a";
+    white-space: pre;
+}
+
+@media screen and (min-width: 769px) {
+    .banner{
+        min-height: 223px;
+        padding : 10px;
+        justify-content: center ;
+        margin-bottom: 43px;
+    }
+
+    .banner_title{
+        font-size: 48px;
+    }
+
+    .banner_text_2::before{
+        content: "";
+        white-space: normal;
+    }
+    
+}

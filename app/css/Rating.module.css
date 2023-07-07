@@ -1,0 +1,23 @@
+.star_rating{
+    display : flex;
+    gap : 0 6.59px;
+}
+
+.star{
+    width: 13.41px;
+    height: 13px;
+}
+
+/* info_container ----------------- */
+
+@media screen and (min-width: 769px) {
+    .star_rating{
+        display : flex;
+        gap : 0 15.25px;
+    }
+
+    .star{
+        width: 24.75px;
+        height: 24px;
+    }
+}

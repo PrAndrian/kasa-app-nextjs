@@ -1,0 +1,25 @@
+/* About --------------------------------------*/
+#about{
+    padding: 0 20px;
+    min-height: 100vh;
+    margin-bottom: 20px;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.collapse_about{
+    display: flex;
+    flex-direction: column;
+    gap : 31px;
+    padding: 0 ;
+}
+
+@media screen and (min-width: 1025px) {
+    #about{
+        padding: 0 108px;
+    }
+
+    .collapse_about{
+        padding: 0 108px;
+    }
+}

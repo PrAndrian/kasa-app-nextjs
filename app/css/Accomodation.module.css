@@ -1,0 +1,129 @@
+
+/* Logement ------------------------------- */
+.logement{
+    padding : 0 20px 20px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: auto;
+}
+
+.info_footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top : 16px;
+}
+
+
+/* Profile Text  -----------------  */
+
+.title_logement{
+    font-weight: 500;
+    font-size: 18px;
+    color : #FF6060;
+    line-height: 25.67px;
+    margin-bottom: 5px;
+}
+
+.location_logement{
+    font-weight: 500;
+    font-size: 14px;
+    color : #FF6060;
+    line-height: 19.96px;
+}
+
+/* Profile picture ----------- */
+
+.profile_info{
+    display: flex;
+    align-items: center;
+    gap : 10.5px;
+    color : #FF6060;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.profile_picture{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+
+.tags_logement{
+    margin-top: 10px;
+    display :flex;
+    flex-wrap: wrap;
+    gap : 10px;
+}
+
+.collapse_container{
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+    padding: 16.5px 0;
+}
+
+.star_rating{
+    display : flex;
+    gap : 0 6.59px;
+}
+
+
+@media screen and (min-width: 769px) {
+    .logement{
+        padding : 0 100px;
+    }
+
+    .title_logement{
+        font-size: 36px;
+        line-height: 51.34px;
+        margin-bottom: 0;
+    }
+    .location_logement{
+        font-size: 18px;
+        line-height: 25.67px;
+        margin-bottom: 20px;
+    }
+
+    .info_container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .info_footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: none;
+        align-items: none;
+        margin : 0;
+        gap : 25px;
+    }
+
+    .profile_info{
+        height: 64px;
+        font-size: 18px;
+        justify-content: none;
+        align-items: none;
+    }
+
+    
+    .profile_picture{
+        width: 64px;
+        height: 64px;
+    }
+
+    .collapse_container{
+        flex-direction: row;  
+        justify-content: space-between;
+        padding: 26px 0;
+        gap : 88px;
+    }
+
+    .star_rating{
+        display : flex;
+        gap : 0 15.25px;
+    }
+    
+}

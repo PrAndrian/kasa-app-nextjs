@@ -1,0 +1,61 @@
+/* COLLAPSE ------------------------ */
+
+.collapse{
+    width: 100%;
+}
+
+.collapse_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #FF6060;
+    padding : 0 12px;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size : 13px;
+    cursor: pointer;
+}
+
+.collapse_icon_active{
+    transform: rotate(-180deg);
+}
+
+.collapse_content{
+    display: none;
+    width: 100%;
+    height: fit-content;
+    padding: 17px 11px ;
+    color : #FF6060;
+    background-color: #F6F6F6;
+    font-size : 12px;
+}
+
+.collapse_content_active{
+    display: block;
+}
+
+.equipement{
+    white-space: pre-wrap;
+}
+
+@media screen and (min-width: 769px) {
+
+    .collapse_header{
+        height: 52px;
+        border-radius: 10px;
+        font-size : 18px
+    }
+
+    .collapse_content{
+        padding: 30px 20px;
+        line-height: 25.67px;
+        font-size : 18px
+        
+    }
+    .collapse_content > *{
+        line-height: 25.67px;
+    }
+}

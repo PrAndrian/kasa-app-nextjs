@@ -1,0 +1,43 @@
+/* NAVBAR ------------------------------------------------*/
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  20px 20px 16px 20px;
+}
+
+.logo{
+   width: 145px;
+   height: 47px;
+}
+
+#links{
+   display: flex;
+   gap:10px;
+   font-size: 12px;
+   font-weight: 500;
+   color : #FF6060;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+#links a.active {
+   text-decoration: underline;
+}
+
+@media screen and (min-width: 769px) {
+   .nav{
+       padding:  40px 100px 63px 100px;
+   }
+
+   .logo{
+       width: 210.32px;
+       height: 68px;
+   }
+
+   #links{
+       gap:57px;
+       font-size: 24px;
+   }
+}
