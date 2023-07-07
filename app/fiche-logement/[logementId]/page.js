@@ -1,4 +1,3 @@
-
 import styles from '@/app/css/Accomodation.module.css'
 import {listLogement} from '@/public/data/logements'
 import Image from 'next/image';
@@ -12,6 +11,10 @@ const page = ({params}) => {
   const logementId = params.logementId;
 
   const logementData = listLogement.find((logement) => logement.id === logementId);
+
+  if (logementData === undefined) {
+    throw new Error('Logement introuvable')
+  }
 
   return (
     <>    
